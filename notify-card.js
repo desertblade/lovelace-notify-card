@@ -4,15 +4,15 @@ class NotifyCard extends HTMLElement {
       throw new Error('You need to define an action and data');
     }
     this.config = config;
-    if(config.target){
-      if (typeof this.config.target == "string") {
-        this.targets = [this.config.target];
-      } else if (Array.isArray(this.config.target)) {
-        this.targets = this.config.target
-      } else {
-        throw new Error('Target needs to be a list or single target');
-      }
-    }
+    // if(config.target){
+    //   if (typeof this.config.target == "string") {
+    //     this.targets = [this.config.target];
+    //   } else if (Array.isArray(this.config.target)) {
+    //     this.targets = this.config.target
+    //   } else {
+    //     throw new Error('Target needs to be a list or single target');
+    //   }
+    // }
     this.render();
   }
 
